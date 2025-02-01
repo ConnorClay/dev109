@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    background-image: url("https://img.freepik.com/free-psd/watercolor-wedding-border-design_23-2151179956.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #8A2BE2;
+    padding: 20px;
+    text-align: center;
+}
+
+#logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#feature {
+    background-color: #8CC63E;
+    background-image: url("https://png.pngtree.com/png-vector/20220801/ourmid/pngtree-cute-minimalist-flower-line-art-png-image_6095288.png"); 
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#column1 {
+    background-color: #FFD700;
+    flex: 1;
+    padding: 20px;
+}
+
+#column2 {
+    background-color: #DC143C;
+    flex: 1;
+    padding: 20px;
+}
+
+#column3 {
+    background-color: #00BFFF;
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
