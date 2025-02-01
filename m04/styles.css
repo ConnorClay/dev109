@@ -1,0 +1,74 @@
+body {
+    background-image: url("path/to/your/background-image.jpg"); /* Replace with your image path */
+    background-size: cover; /* or contain, depending on your preference */
+    font-family: sans-serif; /* Fallback font */
+}
+
+header {
+    background-color: #8A2BE2; /* Example color */
+    padding: 20px;
+    text-align: center; /* Center the logo and menu */
+}
+
+#logo {
+    font-family: 'Oswald', sans-serif; /* Example font from Open Font Library - import it! */
+    font-size: 2em;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Make the list horizontal */
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#feature {
+    background-color: #8CC63E;
+    background-image: url("path/to/your/feature-image.jpg"); /* Replace with your image path */
+    background-size: contain; /* or cover, depending on your preference */
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 50px; /* Add some padding for content visibility */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap if necessary */
+    padding: 20px;
+}
+
+#column1 {
+    background-color: #FFD700;
+    flex: 1; /* Equal width for all columns */
+    padding: 20px;
+}
+
+#column2 {
+    background-color: #DC143C;
+    flex: 1;
+    padding: 20px;
+}
+
+#column3 {
+    background-color: #00BFFF;
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
