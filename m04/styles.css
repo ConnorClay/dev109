@@ -51,21 +51,23 @@ main {
 }
 
 #column1 {
-    background-color: #eb46d5;
+    background-color: #EB46D5;
     flex: 1; 
     padding: 20px;
 }
 
 #column2 {
-    background-color: #94187f;
+    background-color: #94187F;
     flex: 1;
     padding: 20px;
+    color: white; 
 }
 
 #column3 {
-    background-color: #5c0f3c;
+    background-color: #5C0F3C;
     flex: 1;
     padding: 20px;
+    color: white; 
 }
 
 footer {
