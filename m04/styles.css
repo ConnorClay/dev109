@@ -51,19 +51,19 @@ main {
 }
 
 #column1 {
-    background-color: #FFD700;
-    flex: 1;
+    background-color: #eb46d5;
+    flex: 1; 
     padding: 20px;
 }
 
 #column2 {
-    background-color: #DC143C;
+    background-color: #94187f;
     flex: 1;
     padding: 20px;
 }
 
 #column3 {
-    background-color: #00BFFF;
+    background-color: #5c0f3c;
     flex: 1;
     padding: 20px;
 }
