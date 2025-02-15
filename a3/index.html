@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhombus Generator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #rhombus-container {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .rhombus-part {
+            text-align: center; 
+            margin-bottom: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Rhombus Generator</h1>
+    <p>By Connor Clay</p>
+
+    <form id="rhombus-form">
+        <label for="height">Height:</label>
+        <input type="number" id="height" name="height" min="1" required><br><br>
+
+        <label for="odd-color">Odd Color:</label>
+        <select id="odd-color" name="odd-color">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
+            <option value="orange">Orange</option>
+        </select><br><br>
+
+        <label for="even-color">Even Color:</label>
+        <select id="even-color" name="even-color">
+            <option value="yellow">Yellow</option>
+            <option value="cyan">Cyan</option>
+            <option value="magenta">Magenta</option>
+            <option value="gray">Gray</option>
+            <option value="pink">Pink</option>
+        </select><br><br>
+
+        <label for="symbol">Symbol:</label>
+        <select id="symbol" name="symbol">
+            <option value="*">*</option>
+            <option value="^">^</option>
+            <option value="%">%</option>
+            <option value="$">$</option>
+            <option value="#">#</option>
+        </select><br><br>
+
+        <button type="button" onclick="generateRhombus()">Generate Rhombus</button>
+    </form>
+
+    <div id="rhombus-container">
+    </div>
+
+    <script>
+        function generateRhombus() {
+            const height = parseInt(document.getElementById("height").value);
+            const oddColor = document.getElementById("odd-color").value;
+            const evenColor = document.getElementById("even-color").value;
+            const symbol = document.getElementById("symbol").value;
+
+            const container = document.getElementById("rhombus-container");
+            container.innerHTML = ""; 
+
+            function createRhombusPart(rows, isUpper) {
+                let partHtml = "";
+                for (let i = 1; i <= rows; i++) {
+                    const spaces = isUpper ? rows - i : i - 1;
+                    const chars = isUpper ? 2 * i - 1 : 2 * (rows - i) + 1;
+                    partHtml += `<div class="rhombus-part">`;
+                    for (let j = 0; j < spaces; j++) {
+                        partHtml += "&nbsp;&nbsp;"; 
+                    }
+                    for (let k = 0; k < chars; k++) {
+                        const color = (i + k) % 2 === 0 ? evenColor : oddColor;
+                        partHtml += `<span style="color: ${color};">${symbol}</span>`;
+                    }
+                    partHtml += "</div>";
+                }
+                return partHtml;
+            }
+
+
+            const upperPart = createRhombusPart(height, true);
+            const lowerPart = createRhombusPart(height, false);
+
+            container.innerHTML = upperPart + lowerPart;
+
+        }
+    </script>
+</body>
+</html>
