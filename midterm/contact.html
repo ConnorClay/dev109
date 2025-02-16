@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Connor Clay</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="wrap">
+
+<div id="header">
+    <h1>Connor Clay</h1>
+    <h2>Web Portfolio</h2>
+</div>
+
+<div id="topmenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="artifacts.html">Artifacts</a></li>
+        <li><a href="moduleassignments.html">Module Assignments</a></li>
+        <li><a href="creative.html">Personal Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="thankyou.html">Thank You</a></li>
+    </ul>
+</div>
+
+<div id="content">
+    <h2>Contact</h2>
+    <form action="thankyou.html" method="get" name="myContact" onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<div class="clear"> </div>
+
+<div id="footer">
+    <div class="left">
+        Copyright &copy; 2025 Connor Clay
+    </div>
+    <div class="clear"> </div>
+</div>
+
+</div>
+
+<script>
+function validateForm() {
+    let name = document.forms["myContact"]["name"].value;
+    let email = document.forms["myContact"]["email"].value;
+    let comment = document.forms["myContact"]["comment"].value;
+
+    if (name == "" || email == "" || comment == "") {
+        alert("All fields must be filled out");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>
