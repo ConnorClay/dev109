@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Page</title>
+</head>
+<body>
+    <h1>menu</h1>
+    <p>each item on the menu is 15.99</p>
+
+    <table border="1">
+        <tr>
+            <td><h1>todays menu:</h1></td>
+            <td>5 stars</td>
+        </tr>
+        <tr>
+            <td><img src="https://media.istockphoto.com/id/1084572788/photo/3d-render-of-luxury-restaurant.jpg?s=1024x1024&w=is&k=20&c=B63KsVglHnKYF2wJtMAcX24lpVJWs4G3rJ1XLHr2LSQ=" width="100" height="100"></td>
+            <td width="50">adresss:</td>
+            <td>21st ellensburg road</td>
+        </tr>
+        <tr>
+            <td>family owned and opperated since 1999</td>
+            <td>hours: </td>
+            <td>tuesday though sunday 6am 2pm</td>
+        </tr>
+        <tr>
+            <th>photo</th>
+            <th width="50">food</th>
+            <th>Description</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td><img src="https://cdn.pixabay.com/photo/2018/07/22/12/22/chia-seeds-3554466_1280.jpg" width="100" height="100"></td>
+            <td>chia pudding</td>
+            <td>consits of our all natural chia seeds topped with berries of all sorts.</td>
+            <td><input type="number" id="chiaPuddingQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+            <td><img src="https://cdn.pixabay.com/photo/2021/11/08/15/57/avocado-toast-6779457_1280.jpg" width="100" height="100"></td>
+            <td>avocado toast</td>
+            <td>freashly cut avocado carefully sliced onto toasted crispybagel</td>
+            <td><input type="number" id="avocadoToastQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+            <td><img src="https://cdn.pixabay.com/photo/2023/05/31/11/14/smoothie-8031132_1280.jpg" width="100" height="100"></td>
+            <td>fruit smoothie</td>
+            <td>mix of spinage,bannanas, berrys, mango and mellon</td>
+            <td><input type="number" id="fruitSmoothieQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+            <td><img src="https://media.istockphoto.com/id/919919376/photo/smiling-and-positive-face-made-from-fried-eggs-and-bacon-on-plate.jpg?s=1024x1024&w=is&k=20&c=MdvIvcycWOL3zCQTLp53K6JlE8ICVnrbP9Y9ck2eFEs=" width="100" height="100"></td>
+            <td>eggs and bacon</td>
+            <td>two soft boiled eggs with a side of crispy bacon and hashbrowns</td>
+            <td><input type="number" id="eggsAndBaconQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+            <td><img src="https://cdn.pixabay.com/photo/2019/03/18/21/17/waffle-4064213_1280.jpg" width="100" height="100"></td>
+            <td>waffels</td>
+            <td>freshly made white flour served with syrup and strawberries </td>
+            <td><input type="number" id="wafflesQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+            <td><img src="https://media.istockphoto.com/id/918352064/photo/a-bowl-of-smoothies-with-cereals-for-a-healthy-breakfast-and-berries-chia-seeds-and-coconut.jpg?s=1024x1024&w=is&k=20&c=fdxNurgnFE8gmQcn-hH-h-eKxCNlO6MUyl5SatHkxHE=" width="100" height="100"></td>
+            <td>alkii bowl</td>
+            <td>frozen paste kind of texture made from berries</td>
+            <td><input type="number" id="alkiiBowlQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+            <td><img src="https://media.istockphoto.com/id/1097458952/photo/raspberry-dessert-cheesecake-trifle-mouse-in-a-glass-copy-space.jpg?s=1024x1024&w=is&k=20&c=dotThSU1wsae7qFGeAspYqLkHBgEjYkY6pzzqJeD-Ns=" width="100" height="100"></td>
+            <td>breakfast pudding</td>
+            <td>pudding made from berries and other freash fruit</td>
+            <td><input type="number" id="breakfastPuddingQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><button type="button" onclick="calculateTotal()">Calculate Total</button></td>
+        </tr>
+        <tr>
+            <td colspan="4">Total: $<span id="totalPrice">0.00</span></td>
+        </tr>
+    </table>
+    <script src="js/script.js"></script>
+</body>
+</html>
