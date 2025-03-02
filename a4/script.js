@@ -88,6 +88,7 @@ function validateForm() {
     }
 
     if (!valid) {
+        event.preventDefault();
         return false;
     }
 
