@@ -3,7 +3,7 @@ function addItemToList() {
     if (newItemText) {
         const newListItem = document.createElement("li");
         newListItem.textContent = newItemText;
-        document.getElementById("list").appendChild(newListItem);
+        document.getElementById("groceryList").appendChild(newListItem);
         document.getElementById("newItem").value = ""; 
     }
 }
