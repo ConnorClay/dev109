@@ -1,9 +1,9 @@
 const images = [
-    { src: 'images/image1.jpeg', alt: 'Description of Image 1', description: 'Image 1 Description' },
-    { src: 'images/image2.jpg', alt: 'Description of Image 2', description: 'Image 2 Description' },
-    { src: 'images/image3.jpg', alt: 'Description of Image 3', description: 'Image 3 Description' },
-    { src: 'images/image4.jpg', alt: 'Description of Image 4', description: 'Image 4 Description' },
-    { src: 'images/image5.jpg', alt: 'Description of Image 5', description: 'Image 5 Description' },
+    { src: 'images/image1.jpeg', alt: 'Description of Image 1', description: 'This is Snoqualmie Falls' },
+    { src: 'images/image2.jpg', alt: 'Description of Image 2', description: 'This is Mount Si' },
+    { src: 'images/image3.jpg', alt: 'Description of Image 3', description: 'This is Lake Roosevelt' },
+    { src: 'images/image4.jpg', alt: 'Description of Image 4', description: 'This is Mount Rainier' },
+    { src: 'images/image5.jpg', alt: 'Description of Image 5', description: 'This is Mount Saint Helens' },
 ];
 
 let currentIndex = 0;
