@@ -8,7 +8,7 @@ const images = [
 
 let currentIndex = 0;
 let timer;
-let timerValue = 4; 
+let timerValue = 10; 
 
 function updateCarousel() {
     const image = document.getElementById('carousel-image');
