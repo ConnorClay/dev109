@@ -1,9 +1,9 @@
 const images = [
     { src: 'images/image1.jpeg', alt: 'Description of Image 1', description: 'This image is of the Snoqualmie Falls.' },
-    { src: 'images/image2.jpg', alt: 'Description of Image 2', description: 'This image is of the mountain Mount Si.' },
+    { src: 'images/image2.jpg', alt: 'Description of Image 2', description: 'This image is of the Mount Si.' },
     { src: 'images/image3.jpg', alt: 'Description of Image 3', description: 'This image is of Lake Roosevelt.' },
-    { src: 'images/image4.jpg', alt: 'Description of Image 4', description: 'This image is of the mountain Mount Rainier.' },
-    { src: 'images/image5.jpg', alt: 'Description of Image 5', description: 'This image is of the mountain Mount Saint Helens.' },
+    { src: 'images/image4.jpg', alt: 'Description of Image 4', description: 'This image is of the Mount Rainier.' },
+    { src: 'images/image5.jpg', alt: 'Description of Image 5', description: 'This image is of the Mount Saint Helens.' },
 ];
 
 let currentIndex = 0;
