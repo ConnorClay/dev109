@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation - Connor Clay</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+    <div id="header">
+    <h1>Connor Clay</h1>  
+    <h2>Web Portfolio</h2>  
+</div>
+
+        <nav id="topmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="artifacts.html">Artifacts</a></li>
+                <li><a href="modules.html">Module Assignments</a></li>
+                <li><a href="creative.html">Personal Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="validation.html">Validation</a></li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <h2>Validation Results</h2>
+            <div style="float: left; width: 45%; margin-right: 5%;">
+                <h3>HTML</h3>
+                <img src="images/index-html-validation.png" alt="index.html HTML Validation" style="max-width: 100%;">
+                <p>index.html</p>
+
+                <img src="images/about-html-validation.png" alt="about.html HTML Validation" style="max-width: 100%;">
+                <p>about.html</p>
+
+                <img src="images/courses-html-validation.png" alt="courses.html HTML Validation"
+                    style="max-width: 100%;">
+                <p>courses.html</p>
+
+                <img src="images/artifacts-html-validation.png" alt="artifacts.html HTML Validation"
+                    style="max-width: 100%;">
+                <p>artifacts.html</p>
+
+                <img src="images/modules-html-validation.png" alt="modules.html HTML Validation"
+                    style="max-width: 100%;">
+                <p>modules.html</p>
+
+                <img src="images/contact-html-validation.png" alt="contact.html HTML Validation"
+                    style="max-width: 100%;">
+                <p>contact.html</p>
+
+                <img src="images/creative-html-validation.png" alt="creative.html HTML Validation"
+                    style="max-width: 100%;">
+                <p>creative.html</p>
+                </div>
+            <div style="float: left; width: 45%;">
+                <h3>CSS</h3>
+                <img src="images/style-css-validation.png" alt="style.css CSS Validation" style="max-width: 100%;">
+                <p>style.css</p>
+            </div>
+            <div style="clear: both;"></div>
+        </main>
+
+        <div class="clear"> </div>
+
+        <footer id="footer">
+            <div class="left">
+                Copyright &copy; 2025 Connor Clay
+            </div>
+
+            <div class="clear"> </div>
+        </footer>
+
+    </div>
+
+    <audio id="bgMusic" loop autoplay>
+        <source src="music/bensound-creativeminds.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="muteButton">Mute</button>
+
+    <script>
+        const bgMusic = document.getElementById("bgMusic");
+        const muteButton = document.getElementById("muteButton");
+
+        muteButton.addEventListener("click", function() {
+            if (bgMusic.volume > 0) {
+                bgMusic.volume = 0;
+                muteButton.textContent = "Unmute";
+            } else {
+                bgMusic.volume = 1;
+                muteButton.textContent = "Mute";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
