@@ -50,26 +50,26 @@
 
     </div>
 
-   <audio id="bgMusic" loop autoplay muted>
-        <source src="music/music.m4a" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <button id="muteButton">Unmute</button>
+  <audio id="bgMusic" loop autoplay muted>
+    <source src="music/music.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+</audio>
+<button id="muteButton">Unmute</button>
 
-    <script>
-        const bgMusic = document.getElementById("bgMusic");
-        const muteButton = document.getElementById("muteButton");
+<script>
+    const bgMusic = document.getElementById("bgMusic");
+    const muteButton = document.getElementById("muteButton");
 
-        muteButton.addEventListener("click", function() {
-            if (bgMusic.muted) {
-                bgMusic.muted = false;
-                muteButton.textContent = "Mute";
-            } else {
-                bgMusic.muted = true;
-                muteButton.textContent = "Unmute";
-            }
-        });
-    </script>
+    muteButton.addEventListener("click", function() {
+        if (bgMusic.muted) {
+            bgMusic.muted = false;
+            muteButton.textContent = "Mute";
+        } else {
+            bgMusic.muted = true;
+            muteButton.textContent = "Unmute";
+        }
+    });
+</script>
        
 </body>
 
