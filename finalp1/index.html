@@ -57,19 +57,26 @@
 <button id="muteButton">Unmute</button>
 
 <script>
-    const bgMusic = document.getElementById("bgMusic");
-    const muteButton = document.getElementById("muteButton");
+   const bgMusic = document.getElementById("bgMusic");
+        const muteButton = document.getElementById("muteButton");
 
-    muteButton.addEventListener("click", function() {
-        if (bgMusic.muted) {
-            bgMusic.muted = false;
-            muteButton.textContent = "Mute";
-        } else {
-            bgMusic.muted = true;
-            muteButton.textContent = "Unmute";
-        }
-    });
-</script>
+        muteButton.addEventListener("click", function() {
+            if (bgMusic.muted) {
+                bgMusic.muted = false;
+                muteButton.textContent = "Mute";
+                bgMusic.play()
+                    .then(() => {
+                    })
+                    .catch(error => {
+                
+                        console.log("Autoplay prevented:", error);
+                    });
+            } else {
+                bgMusic.muted = true;
+                muteButton.textContent = "Unmute";
+            }
+        });
+    </script>
 </body>
 </html>
        
