@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Assignments - Connor Clay</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header>
+            <h1>Connor Clay</h1>
+            <h2>Web Portfolio</h2>
+        </header>
+
+        <nav id="topmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="artifacts.html">Artifacts</a></li>
+                <li><a href="modules.html">Module Assignments</a></li>
+                <li><a href="creative.html">Personal Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="validation.html">Validation</a></li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <h2>Module Assignments</h2>
+
+            <h3>Module Assignment 1</h3>
+            <img src="images/1830767.png" alt="Module Assignment 1 Thumbnail" class="artifact-thumbnail">
+            <p>This project taught the basics in HTML by making a recipe website.</p>
+            <a href="https://connorclay.github.io/dev109/m01/index.html" target="_blank" rel="noopener">View Module
+                Assignment 1</a>
+
+            <h3>Module Assignment 4</h3>
+            <img src="images/85118.png" alt="Module Assignment 4 Thumbnail" class="artifact-thumbnail">
+            <p>This project taught how to use CSS and HTML together to make a website look good.</p>
+            <a href="https://connorclay.github.io/dev109/m04/#" target="_blank" rel="noopener">View Module Assignment
+                4</a>
+
+            <h3>Module Assignment 5</h3>
+            <img src="images/595743_math_512x512.png" alt="Module Assignment 5 Thumbnail"
+                class="artifact-thumbnail">
+            <p>This project taught to have a website get a number from the user and then do a calculation based on that
+                number. </p>
+            <a href="https://connorclay.github.io/dev109/m06/index.html" target="_blank" rel="noopener">View Module
+                Assignment 5</a>
+
+        </main>
+
+        <div class="clear"> </div>
+
+        <footer id="footer">
+            <div class="left">
+                Copyright &copy; 2025 Connor Clay
+            </div>
+
+            <div class="clear"> </div>
+        </footer>
+
+    </div>
+
+    <audio id="bgMusic" loop autoplay>
+        <source src="music/music.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="muteButton">Mute</button>
+
+    <script>
+        const bgMusic = document.getElementById("bgMusic");
+        const muteButton = document.getElementById("muteButton");
+
+        muteButton.addEventListener("click", function() {
+            if (bgMusic.volume > 0) {
+                bgMusic.volume = 0;
+                muteButton.textContent = "Unmute";
+            } else {
+                bgMusic.volume = 1;
+                muteButton.textContent = "Mute";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
