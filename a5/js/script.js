@@ -8,7 +8,8 @@ const images = [
 
 let currentIndex = 0;
 let timer;
-let timerValue = 4; 
+let timerValue = 4;
+let isAutoPlaying = true; // Start auto-playing by default
 
 function updateCarousel() {
     const image = document.getElementById('carousel-image');
@@ -21,13 +22,17 @@ function updateCarousel() {
 function nextImage() {
     currentIndex = (currentIndex + 1) % images.length;
     updateCarousel();
-    resetTimer();
+    if (isAutoPlaying) {
+        resetTimer();
+    }
 }
 
 function prevImage() {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateCarousel();
-    resetTimer();
+    if (isAutoPlaying) {
+        resetTimer();
+    }
 }
 
 function startTimer() {
@@ -45,11 +50,25 @@ function startTimer() {
 
 function resetTimer() {
     clearInterval(timer);
-    startTimer();
+    if (isAutoPlaying) {
+        startTimer();
+    }
+}
+
+function toggleAutoPlay() {
+    isAutoPlaying = !isAutoPlaying;
+    if (isAutoPlaying) {
+        startTimer();
+        document.getElementById('auto-btn').textContent = 'Auto Play';
+    } else {
+        clearInterval(timer);
+        document.getElementById('auto-btn').textContent = 'Play';
+    }
 }
 
 document.getElementById('next-btn').addEventListener('click', nextImage);
 document.getElementById('prev-btn').addEventListener('click', prevImage);
+document.getElementById('auto-btn').addEventListener('click', toggleAutoPlay);
 
 updateCarousel();
 startTimer();
