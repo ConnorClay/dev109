@@ -14,7 +14,7 @@ header {
 .chessboard {
     width: 80%;
     margin: 20px auto;
-    background-image: url('images/wood.jpeg');
+    background-image: url('images/wood.jpg');
     background-size: cover;
     aspect-ratio: 1 / 1;
 }
